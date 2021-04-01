@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   public employees: Employee[];
   public editEmployee: Employee;
   public deleteEmployee: Employee;
+  editedEmployee: Employee;
   
 
 
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit {
   { }
   ngOnInit()
   {
-  // this.getEmployees(); 
+     this.getEmployees(); 
   }
 
   public searchEmployees(key: string) : void
@@ -88,14 +89,17 @@ export class AppComponent implements OnInit {
           }
       );
 
-
   }
 
    // BIND METHOD TO UI ONCLICK
-  public onUpdateEmployee(employee: Employee): void
+   //Employee passed in params
+  public onUpdateEmployee(ngForm: NgForm): void
   {
-
-    this.employeeService.updateEmployee(employee).subscribe(
+      console.log(ngForm.value);
+      console.log(ngForm.value.email)
+      this.editedEmployee = ngForm.value;
+      console.log(this.editedEmployee);
+    this.employeeService.updateEmployee(this.editedEmployee).subscribe(
       (response:Employee)=>{
         console.log(response);
         this.getEmployees();
@@ -145,7 +149,7 @@ export class AppComponent implements OnInit {
       button.setAttribute('data-target','#updateEmployeeModal');
     }
 
-    if(mode == 'delete')
+    if(mode === 'delete')
     {
       this.deleteEmployee=employee; 
       button.setAttribute('data-target','#deleteEmployeeModal');
