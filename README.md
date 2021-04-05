@@ -13,8 +13,8 @@
 ## Link to second ANDROID FRONTEND of EMPLOYEE MANAGER.
 
 
-![](images/1-EmployeeMan.png)
-![](images/2-EmployeeMan.png)
-![](images/3-EmployeeMan.png)
-![](images/4-EmployeeMan.png)
-![](images/5-EmployeeMan.png)
+![](images/1-EmployeeMan.PNG)
+![](images/2-EmployeeMan.PNG)
+![](images/3-EmployeeMan.PNG)
+![](images/4-EmployeeMan.PNG)
+![](images/5-EmployeeMan.PNG)
