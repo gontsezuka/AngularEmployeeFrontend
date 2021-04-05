@@ -19,7 +19,6 @@ export class EmployeeService {
     return this.http.get<Employee[]>(`${this.apiUrl}/employees/find-all`)
   }
 
-
   public updateEmployee(employee: Employee): Observable<Employee>
   {
     return this.http.put<Employee>(`${this.apiUrl}/employees/update-employee-return`,employee);
