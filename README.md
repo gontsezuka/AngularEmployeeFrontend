@@ -10,7 +10,7 @@
 
 ## This project has a second FrontEnd written in ANDROID JAVA which also communicates with the same SPRING BOOT backend as this application.
 
-## Link to second ANDROID FRONTEND of EMPLOYEE MANAGER.
+## Link to second ANDROID FRONTEND of EMPLOYEE MANAGER. - https://github.com/gontsezuka/AndroidEmployeeFrontEnd
 
 
 ![](images/1-EmployeeMan.PNG)
